@@ -1,0 +1,83 @@
+.downloadButton, .clearButton {
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background-color: transparent;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.downloadButton:active, .clearButton:active {
+  transform: scale(1.05);
+}
+.downloadButton:focus, .clearButton:focus {
+  outline: 0;
+}
+.container {
+  margin: 0 1rem 2rem 1rem;  
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.worthFilterContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.worthFilterLabel, .worthFilterInput {
+  font-size: 1.4rem;
+}
+.worthFilterInput:focus {
+  outline: 0;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.filtersSelect {
+  height: 3rem;
+}
+.filtersSelect:focus {
+  outline: 0;
+} 
+.filtersContainer {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.clearButton {
+  width: inherit;
+  padding: 0 1rem;
+}
+@media (min-width: 600px) {
+  .flexbox {
+    justify-content: flex-start;
+    gap: 1vw;
+  }
+  .worthFilterLabel {
+    width: 24vw;
+  }
+  .worthFilterContainer {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 900px) {
+  .worthFilterLabel {
+    width: 16vw;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 6vw;
+    align-items: center;
+  }
+  .worthFilterLabel {
+    width: 10vw;
+  }
+}
